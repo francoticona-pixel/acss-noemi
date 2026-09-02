@@ -1,0 +1,49 @@
+
+header {
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+header h1 {
+    font-size: 70px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 25px;
+}
+
+.controles {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  
+}
+
+button{
+    height: 40px;
+    width: 150px;
+    background-color: #1e3a8a;
+    color: white;
+    transition: 0.2s;
+    border-radius: 10px;
+    border: none;   
+}
+
+button:hover{
+    transform: scale(0.98);
+    cursor: pointer;
+}
+
+.texto-grande{
+    font-size: 24px;
+}
+
+.texto-pequeno{
+    font-size: 24px;
+}
+
