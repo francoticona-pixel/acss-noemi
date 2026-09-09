@@ -1,11 +1,13 @@
 
+
 header {
-    background-color: #1e3a8a;
-    color: white;
+  background-color: #643fc498;
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 30px 20px;
     border-radius: 12px;
     margin-bottom: 25px;
+
 }
 
 header h1 {
@@ -40,10 +42,30 @@ button:hover{
 }
 
 .texto-grande{
-    font-size: 24px;
+    font-size: 30px;
 }
 
-.texto-pequeno{
-    font-size: 24px;
+
+.texto-pequeno {
+    font-size: 20px;
 }
 
+.contraste  {
+background:#5b0b0b;
+color: #fff;
+}
+.contraste #conteudo {
+background:#000000;
+border: 2px  solid #5b0b0b;
+}
+.contraste button {
+background:#d7e413;
+color: #000000;
+}
+
+.contraste header {
+    
+    color: rgb(255, 255, 255);
+    
+    
+}
