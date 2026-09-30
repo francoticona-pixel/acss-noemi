@@ -1,86 +1,310 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acessibilidade</title>
+
+    <title>Acessibilidade para Todos</title>
+
     <link rel="stylesheet" href="./css/style.css">
+
 </head>
+
+
 <body>
 
-    <header>
-        <h1>Site Acessível</h1>
 
-    <p>
-        Esta página possui ferramentas para facilitar a navegação de diferentes usúarios.
-    </p>
+    <!-- BOTÃO PARA ABRIR O PAINEL -->
+
+    <button
+        class="botao-painel"
+        onclick="abrirPainel()"
+        aria-label="Abrir painel de acessibilidade">
+
+        ⚙️ Painel
+
+    </button>
+
+
+
+    <!-- PAINEL DE ACESSIBILIDADE -->
+
+    <aside
+        id="painelAcessibilidade"
+        class="painel-acessibilidade"
+        aria-label="Painel de acessibilidade">
+
+
+        <!-- CABEÇALHO DO PAINEL -->
+
+        <div class="cabecalho-painel">
+
+            <h2>Acessibilidade</h2>
+
+            <button
+                class="fechar-painel"
+                onclick="fecharPainel()"
+                aria-label="Fechar painel">
+
+                ✕
+
+            </button>
+
+        </div>
+
+
+
+        <!-- OPÇÕES DE ACESSIBILIDADE -->
+
+        <div class="opcoes-acessibilidade">
+
+
+            <!-- 1 - AUMENTAR TEXTO -->
+
+            <button onclick="aumentarTexto()">
+
+                <span class="icone">🔠</span>
+
+                <span>Aumentar texto</span>
+
+            </button>
+
+
+
+            <!-- 2 - DIMINUIR TEXTO -->
+
+            <button onclick="diminuirTexto()">
+
+                <span class="icone">🔡</span>
+
+                <span>Diminuir texto</span>
+
+            </button>
+
+
+
+            <!-- 3 - ALTO CONTRASTE -->
+
+            <button onclick="altoContraste()">
+
+                <span class="icone">🌓</span>
+
+                <span>Alto contraste</span>
+
+            </button>
+
+
+
+            <!-- 4 - LEITURA -->
+
+            <button onclick="lerPagina()">
+
+                <span class="icone">🔊</span>
+
+                <span>Ler página</span>
+
+            </button>
+
+
+
+            <!-- 5 - PARAR LEITURA -->
+
+            <button onclick="pararLeitura()">
+
+                <span class="icone">⏹️</span>
+
+                <span>Parar leitura</span>
+
+            </button>
+
+
+
+            <!-- 6 - DESTACAR LINKS -->
+
+            <button onclick="destacarLinks()">
+
+                <span class="icone">🔗</span>
+
+                <span>Destacar links</span>
+
+            </button>
+
+
+
+            <!-- 7 - FOCO VISÍVEL -->
+
+            <button onclick="ativarFoco()">
+
+                <span class="icone">⌨️</span>
+
+                <span>Foco visível</span>
+
+            </button>
+
+
+
+            <!-- 8 - ESPAÇAMENTO -->
+
+            <button onclick="aumentarEspacamento()">
+
+                <span class="icone">↔️</span>
+
+                <span>Espaçamento</span>
+
+            </button>
+
+
+        </div>
+
+
+    </aside>
+
+
+
+    <!-- CABEÇALHO DO SITE -->
+
+    <header>
+
+        <h1>Acessibilidade para Todos</h1>
+
+        <p>
+            Recursos para tornar a navegação na internet mais acessível.
+        </p>
+
     </header>
+
+
+
+    <!-- CONTEÚDO PRINCIPAL -->
 
     <main>
 
-    <section class="controles" aria-label="Controles de Acessibilidade">
-        <button onclick="aumentarTexto()">
-            A+ Aumentar texto
-        </button>
 
-        <button onclick="diminuirTexto()">
-            A- Diminuar texto
-        </button>
+        <section
+            id="conteudo"
+            class="conteudo">
 
-        <button onclick="altoContraste()">
-            🌓 Alto contraste
-        </button>
 
-        <button onclick="lerPagina()">
-            🔊 Ler página
-        </button>
+            <h2>O que é acessibilidade digital?</h2>
 
-        <button onclick="pararLeitura()">
-            ⏹️ Parar leitura
-        </button>
 
-    </section> 
-</main>
-    <section>
+            <p>
 
-<section  id="conteudo">
-            <h2>Bem-vindo!</h2>
+                A acessibilidade digital permite que diferentes pessoas
+                possam utilizar sites, aplicativos e sistemas de maneira
+                mais fácil e independente.
+
+            </p>
+
+
+            <p>
+
+                Pessoas com deficiência visual, motora, auditiva ou
+                dificuldades de leitura podem se beneficiar de recursos
+                de acessibilidade.
+
+            </p>
+
+
+
+            <h2>Por que ela é importante?</h2>
+
+
+            <p>
+
+                Um site acessível facilita o acesso à informação e melhora
+                a experiência de navegação para todos os usuários.
+
+            </p>
+
+
+            <p>
+
+                Neste site, você pode testar diferentes recursos utilizando
+                o painel de acessibilidade.
+
+            </p>
+
+
+
+            <h2>Como utilizar o painel?</h2>
+
+
+            <p>
+
+                Clique no botão
+
+                <strong>⚙️ Painel</strong>
+
+                localizado na lateral da página para abrir as opções
+                de acessibilidade.
+
+            </p>
+
+
+
+            <h2>Links úteis</h2>
+
+
+            <p>
+
+                Acesse também:
+
+                <a
+                    href="https://www.gov.br/"
+                    target="_blank">
+
+                    Portal Gov.br
+
+                </a>
+
+            </p>
+
+
+            <p>
+
+                Outro exemplo:
+
+                <a
+                    href="https://www.w3.org/WAI/"
+                    target="_blank">
+
+                    Web Accessibility Initiative
+
+                </a>
+
+            </p>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- RODAPÉ -->
+
+    <footer>
 
         <p>
-           Queremos que você tenha a melhor experiência possível em nossa plataforma. Disponibilizamos recursos
-            assistivos — como redimensionamento de texto, alteração de contraste e leitura por voz — para atender
-             às suas necessidades de navegação.
-Queremos que você tenha a melhor experiência possível em nossa plataforma. 
-Disponibilizamos recursos assistivos — como redimensionamento de texto,alteração de contraste e
- leitura por voz — para atender às suas necessidades de navegação.
-             
+
+            Projeto acadêmico — Acessibilidade para Todos
+
         </p>
 
-<p>
-░░░░░░░░░░░░░░░░░░░░░░█████████ <br>
-░░███████░░░░░░░░░░███▒▒▒▒▒▒▒▒███<br>
-░░█▒▒▒▒▒▒█░░░░░░░███▒▒▒▒▒▒▒▒▒▒▒▒▒███<br>
-░░░█▒▒▒▒▒▒█░░░░██▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██<br>
-░░░░█▒▒▒▒▒█░░░██▒▒▒▒▒██▒▒▒▒▒▒██▒▒▒▒▒███<br>
-░░░░░█▒▒▒█░░░█▒▒▒▒▒▒████▒▒▒▒████▒▒▒▒▒▒██<br>
-░░░█████████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██<br>
-░░░█▒▒▒▒▒▒▒▒▒▒▒▒█▒▒▒▒▒▒▒▒▒█▒▒▒▒▒▒▒▒▒▒▒██<br>
-░██▒▒▒▒▒▒▒▒▒▒▒▒▒█▒▒▒██▒▒▒▒▒▒▒▒▒▒██▒▒▒▒██<br>
-██▒▒▒███████████▒▒▒▒▒██▒▒▒▒▒▒▒▒██▒▒▒▒▒██<br>
-█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▒▒▒▒▒▒████████▒▒▒▒▒▒▒██<br>
-██▒▒▒▒▒▒▒▒▒▒▒▒▒▒█▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██<br>
-░█▒▒▒███████████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒██<br>
-░██▒▒▒▒▒▒▒▒▒▒████▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒█<br>
-░░████████████░░░█████████████████<br>
-    
-</p>
+    </footer>
 
-    </section>
 
- <script src="./js/script.js"></script>
-</head>
+
+    <!-- JAVASCRIPT -->
+
+    <script src="./js/script.js"></script>
+
 
 </body>
+
 </html>
-
-
